@@ -3,6 +3,7 @@ import 'package:online_tasks/authentication/screens/authentication_screen.dart';
 import 'package:online_tasks/authentication/screens/login_screen.dart';
 import 'package:online_tasks/authentication/screens/register_screen.dart';
 import 'package:online_tasks/authentication/screens/reset_password_screen.dart';
+import 'package:online_tasks/shared_preference_task.dart';
 import 'package:online_tasks/tasks_screen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ResetPasswordScreen(),
+      home: SharedPreferenceTask(),
     );
   }
 }
