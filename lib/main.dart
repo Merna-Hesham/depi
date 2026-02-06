@@ -3,6 +3,10 @@ import 'package:online_tasks/authentication/screens/authentication_screen.dart';
 import 'package:online_tasks/authentication/screens/login_screen.dart';
 import 'package:online_tasks/authentication/screens/register_screen.dart';
 import 'package:online_tasks/authentication/screens/reset_password_screen.dart';
+import 'package:online_tasks/navigation/home_screen.dart';
+import 'package:online_tasks/navigation/profile_screen.dart';
+import 'package:online_tasks/navigation/routes_gen_go.dart';
+import 'package:online_tasks/navigation/settings_screen.dart';
 import 'package:online_tasks/shared_preference_task.dart';
 import 'package:online_tasks/tasks_screen.dart';
 
@@ -17,9 +21,9 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: SharedPreferenceTask(),
+      routerConfig: RoutesGenGo.mainAppRouting,
     );
   }
 }
