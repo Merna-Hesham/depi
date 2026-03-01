@@ -12,6 +12,8 @@ import 'package:online_tasks/navigation/settings_screen.dart';
 import 'package:online_tasks/shared_preference_task.dart';
 import 'package:online_tasks/tasks_screen.dart';
 
+import 'animation/animated_container_name.dart';
+
 /*
 void main() {
   runApp(
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HiveScreen(),
+      home: AnimatedContainerName(),
     );
   }
 }
